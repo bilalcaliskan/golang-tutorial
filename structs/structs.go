@@ -30,6 +30,14 @@ type Person struct {
 	address Address
 }
 
+type name struct {
+	firstName, lastName string
+}
+
+type image struct {
+	data map[int] int
+}
+
 func Run() {
 	// Basic struct operations
 	fmt.Printf("\nBeginning basic struct operations...\n")
@@ -118,8 +126,24 @@ func Run() {
 	fmt.Println("Person 4 city", per4.Address.city) // city is promoted field
 	fmt.Println("Person 4 state", per4.Address.state) // state is promoted field
 
-	// Exported Structs and Fields
-	fmt.Printf("\nBeginning of exported structs...\n")
-	
-
+	// Structs equality
+	fmt.Printf("\nBeginning of structs equality...\n")
+	name1 := name{
+		firstName: "Steve",
+		lastName:  "Jobs",
+	}
+	name2 := name{"Steve", "Jobs"}
+	if name1 == name2 {
+		fmt.Println("name1 and name2 are equal")
+	} else {
+		fmt.Println("name1 and name2 are not equal")
+	}
+	name3 := name{firstName: "Steve", lastName: "Jobs"}
+	name4 := name{}
+	name4.firstName = "Steve"
+	if name3 == name4 {
+		fmt.Println("name3 and name4 are equal")
+	} else {
+		fmt.Println("name3 and name4 are not equal")
+	}
 }
