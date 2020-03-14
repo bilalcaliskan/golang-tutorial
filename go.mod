@@ -1,4 +1,4 @@
-module demo-project
+module golang-tutorial
 
 go 1.12
 

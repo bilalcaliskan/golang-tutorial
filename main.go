@@ -1,9 +1,10 @@
 package main
 
-import "demo-project/variadicfunctions"
+import "golang-tutorial/structs"
 
 func main() {
 	//arrays.Run()
 	//slices.Run()
-	variadicfunctions.Run()
+	//variadicfunctions.Run()
+	structs.Run()
 }
