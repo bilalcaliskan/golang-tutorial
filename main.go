@@ -10,5 +10,7 @@ func main() {
 	//methods.Run()
 	//interfaces.RunInterfaces1()
 	//interfaces.RunInterfaces2()
-	goroutines.Run()
+	//goroutines.RunGoroutines()
+	//goroutines.RunChannels()
+	goroutines.RunBufferedPools()
 }

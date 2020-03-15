@@ -23,7 +23,7 @@ func alphabets() {
 	}
 }
 
-func Run() {
+func RunGoroutines() {
 	fmt.Printf("\nBeginning of starting Goroutines...\n")
 	fmt.Println("When a new Goroutine is started, the goroutine call returns immediately. Unlike functions, the " +
 		"control does not wait for the Goroutine to finish executing. The control returns immediately to the next line " +
