@@ -1,7 +1,9 @@
 package error_handling
 
 import (
+	"errors"
 	"fmt"
+	"math"
 	"net"
 	"os"
 	"path/filepath"
@@ -27,6 +29,46 @@ func largest(nums []int) {
 func printA(a int) {
 	fmt.Println()
 	fmt.Println("value of a in deferred function", a)
+}
+
+func circleArea(radius float64) (float64, error) {
+	if radius < 0 {
+		return 0, errors.New("Area calculation failed, radius is less than zero")
+	}
+	return math.Pi * radius * radius, nil
+}
+
+func circleAreaWithErrorf(radius float64) (float64, error) {
+	if radius < 0 {
+		return 0, fmt.Errorf("Area calculation failed, radius %0.2f is less than zero", radius)
+	}
+	return math.Pi * radius * radius, nil
+}
+
+func circleAreaWithCustomError(radius float64) (float64, error) {
+	if radius < 0 {
+		return 0, &areaError{"radius is negative", radius}
+	}
+	return math.Pi * radius * radius, nil
+}
+
+func rectArea(length, width float64) (float64, error) {
+	err := ""
+	if length < 0 {
+		err += "length is less than zero"
+	}
+	if width < 0 {
+		if err == "" {
+			err = "width is less than zero"
+		} else {
+			err += ", width is less than zero"
+		}
+	}
+
+	if err != "" {
+		return 0, &areaError2{err, length, width}
+	}
+	return length * width, nil
 }
 
 func RunErrorHandling() {
@@ -127,4 +169,55 @@ func RunErrorHandling() {
 	fmt.Printf("\nBeginning of ignoring errors...\n")
 	files2, _ := filepath.Glob("[")
 	fmt.Println("matched files", files2)
+
+	fmt.Printf("\nBeginning of basic custom error handling...\n")
+	radius := -20.0
+	area, err := circleArea(radius)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Printf("Area of circle %0.2f\n", area)
+	}
+
+	fmt.Printf("\nBeginning of adding more information to the errors...\n")
+	fmt.Println("Errorf() function of fmt package formats the error according to a format specifier and returns " +
+		"a string as value that satisfies error.")
+	radius = -20.0
+	area, err = circleAreaWithErrorf(radius)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Printf("Area of circle %0.2f\n", area)
+	}
+
+	fmt.Printf("\nBeginning of providing more information about the error using struct type and fields...\n")
+	fmt.Println("It is also possible to use struct types which implement the error interface as errors. This " +
+		"gives us more flexibility with error handling.")
+	fmt.Println("We will create a struct type that implements the error interface and use its fields to " +
+		"provide more information about the error.")
+	radius = -20.0
+	area, err = circleAreaWithCustomError(radius)
+	if err != nil {
+		if err, ok := err.(*areaError); ok {
+			fmt.Printf("Radius %0.2f is less than zero\n\n", err.radius)
+		}
+	}
+
+	fmt.Printf("\nBeginning of providing more information about the error using methods on struct types...\n")
+	fmt.Println("We have used methods on struct error types to provide more information about the " +
+		"error(check the struct on area_error2.go file).")
+	length, width := -5.0, -9.0
+	area, err = rectArea(length, width)
+	if err != nil {
+		if err, ok := err.(*areaError2); ok {
+			if err.lengthNegative() {
+				fmt.Printf("error: length %0.2f is less than zero\n", err.length)
+			}
+			if err.widthNegative() {
+				fmt.Printf("error: width %0.2f is less than zero\n", err.width)
+			}
+			return
+		}
+	}
+	fmt.Println("area of rect", area)
 }

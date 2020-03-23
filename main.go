@@ -18,5 +18,7 @@ func main() {
 	//mutexes.RunMutexes()
 	//oop.RunInheritance()
 	//oop.RunPolymorphism()
-	error_handling.RunErrorHandling()
+	//error_handling.RunErrorHandling()
+	//error_handling.RunPanicAndRecover()
+	error_handling.RunPanicAndRecover2()
 }
