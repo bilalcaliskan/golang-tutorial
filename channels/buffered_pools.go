@@ -1,4 +1,4 @@
-package goroutines
+package channels
 
 import (
 	"fmt"
@@ -81,8 +81,16 @@ func RunBufferedPools() {
 	var wg sync.WaitGroup
 	for i := 0; i < no; i++ {
 		wg.Add(1)
+		/*
+		It is important to pass the address of wg. If the address is not passed, then each Goroutine will have its
+		own copy of the WaitGroup and main will not be notified when they finish executing.
+		 */
 		go process(i, &wg)
 	}
 	wg.Wait()
 	fmt.Println("All goroutines finished executing")
+
+	fmt.Printf("\nBeginning of worker pool implementation...\n")
+	fmt.Println("a worker pool is a collection of threads which are waiting for tasks to be assigned to them. " +
+		"Once they finish the task assigned, they make themselves available again for the next task.")
 }

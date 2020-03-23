@@ -1,6 +1,6 @@
 package main
 
-import "golang-tutorial/goroutines"
+import "golang-tutorial/error_handling"
 
 func main() {
 	//arrays.Run()
@@ -12,5 +12,11 @@ func main() {
 	//interfaces.RunInterfaces2()
 	//goroutines.RunGoroutines()
 	//goroutines.RunChannels()
-	goroutines.RunBufferedPools()
+	//goroutines.RunBufferedPools()
+	//channels.RunWorkerPoolsDemo()
+	//channels.RunSelect()
+	//mutexes.RunMutexes()
+	//oop.RunInheritance()
+	//oop.RunPolymorphism()
+	error_handling.RunErrorHandling()
 }
