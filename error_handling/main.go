@@ -83,16 +83,20 @@ func RunErrorHandling() {
 	fmt.Printf("Welcome ")
 
 	fmt.Printf("\nBeginning of arguments evaluation...\n")
-	fmt.Println("The arguments of a deferred function are evaluated when the defer statement is executed and " +
-		"not when the actual function call is done.")
+	/*
+	The arguments of a deferred function are evaluated when the defer statement is executed and not when the actual
+	function call is done.
+	 */
 	a := 5
 	defer printA(a)
 	a = 10
 	fmt.Println("value of a before deferred function call", a)
 
 	fmt.Printf("\nBeginning of stack of defers...\n")
-	fmt.Println("When a function has multiple defer calls, they are pushed on to a stack and executed in Last " +
-		"In First Out (LIFO) order.")
+	/*
+	When a function has multiple defer calls, they are pushed on to a stack and executed in Last In First Out (LIFO)
+	order.
+	 */
 	name := "Naveen"
 	fmt.Printf("Original String: %s\n", string(name))
 	fmt.Printf("Reversed String: ")
@@ -101,7 +105,9 @@ func RunErrorHandling() {
 	}
 
 	fmt.Printf("\nBeginning of practical use of defer...\n")
-	fmt.Println("Defer is used in places where a function call should be executed irrespective of the code flow.")
+	/*
+	Defer is used in places where a function call should be executed irrespective of the code flow.
+	 */
 	var wg sync.WaitGroup
 	r1 := rect{-67, 89}
 	r2 := rect{5, -67}
@@ -116,10 +122,11 @@ func RunErrorHandling() {
 	fmt.Println("All go routines finished executing")
 
 	fmt.Printf("\nBeginning of errors...\n")
-	fmt.Println("If a function or method returns an error, then by convention it has to be the last value " +
-		"returned from the function.")
-	fmt.Println("The idiomatic way of handling error in Go is to compare the returned error to nil. A nil value " +
-		"indicates that no error has occurred and a non nil value indicates the presence of an error.")
+	/*
+	If a function or method returns an error, then by convention it has to be the last value returned from the function.
+	The idiomatic way of handling error in Go is to compare the returned error to nil. A nil value indicates that no
+	error has occurred and a non nil value indicates the presence of an error.
+	 */
 	file, err := os.Open("/test.txt")
 	if err != nil {
 		// "Error() string" method of error interface is just a string, so we can print it
@@ -129,7 +136,7 @@ func RunErrorHandling() {
 	}
 
 	fmt.Printf("\nBeginning of extracting more information from errors method 1...\n")
-	fmt.Println("Asserting the underlying struct type and getting more information from the struct fields.")
+	// Asserting the underlying struct type and getting more information from the struct fields.
 	f, err := os.Open("/test.txt")
 	if err, ok := err.(*os.PathError); ok {
 		fmt.Println("File at path", err.Path, "failed to open")
@@ -180,8 +187,10 @@ func RunErrorHandling() {
 	}
 
 	fmt.Printf("\nBeginning of adding more information to the errors...\n")
-	fmt.Println("Errorf() function of fmt package formats the error according to a format specifier and returns " +
-		"a string as value that satisfies error.")
+	/*
+	Errorf() function of fmt package formats the error according to a format specifier and returns a string as value
+	that satisfies error.
+	 */
 	radius = -20.0
 	area, err = circleAreaWithErrorf(radius)
 	if err != nil {
@@ -191,10 +200,12 @@ func RunErrorHandling() {
 	}
 
 	fmt.Printf("\nBeginning of providing more information about the error using struct type and fields...\n")
-	fmt.Println("It is also possible to use struct types which implement the error interface as errors. This " +
-		"gives us more flexibility with error handling.")
-	fmt.Println("We will create a struct type that implements the error interface and use its fields to " +
-		"provide more information about the error.")
+	/*
+	It is also possible to use struct types which implement the error interface as errors. This gives us more
+	flexibility with error handling.
+	We will create a struct type that implements the error interface and use its fields to provide more information
+	about the error.
+	 */
 	radius = -20.0
 	area, err = circleAreaWithCustomError(radius)
 	if err != nil {
@@ -204,8 +215,9 @@ func RunErrorHandling() {
 	}
 
 	fmt.Printf("\nBeginning of providing more information about the error using methods on struct types...\n")
-	fmt.Println("We have used methods on struct error types to provide more information about the " +
-		"error(check the struct on area_error2.go file).")
+	/*
+	We have used methods on struct error types to provide more information about the error(check the struct on area_error2.go file).
+	 */
 	length, width := -5.0, -9.0
 	area, err = rectArea(length, width)
 	if err != nil {

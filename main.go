@@ -1,6 +1,6 @@
 package main
 
-import "golang-tutorial/error_handling"
+import "golang-tutorial/reflection"
 
 func main() {
 	//arrays.Run()
@@ -20,5 +20,7 @@ func main() {
 	//oop.RunPolymorphism()
 	//error_handling.RunErrorHandling()
 	//error_handling.RunPanicAndRecover()
-	error_handling.RunPanicAndRecover2()
+	//error_handling.RunPanicAndRecover2()
+	//first_class.RunFirstClassFunctions()
+	reflection.RunReflection()
 }

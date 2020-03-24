@@ -42,28 +42,31 @@ func incrementWithChannel(wg *sync.WaitGroup, ch chan bool) {
 
 func RunMutexes() {
 	fmt.Printf("\nBeginning of critical selection...\n")
-	fmt.Println("Race condition is the term that output of the program depends on the sequence of execution of " +
-		"Goroutines.")
-	fmt.Println("When a program runs concurrently, the parts of code which modify shared resources should not " +
-		"be accessed by multiple Goroutines at the same time. This section of code which modifies shared resources " +
-		"is called critical section.")
-	fmt.Println("the race condition could have been avoided if only one Goroutine was allowed to access the " +
-		"critical section of the code at any point of time. This is made possible by using Mutex.")
+	/*
+	Race condition is the term that output of the program depends on the sequence of execution of Goroutines.
+	When a program runs concurrently, the parts of code which modify shared resources should not be accessed by
+	multiple Goroutines at the same time. This section of code which modifies shared resources is called critical section.
+	The race condition could have been avoided if only one Goroutine was allowed to access the critical section of
+	the code at any point of time. This is made possible by using Mutex.
+	*/
 
 	fmt.Printf("\nBeginning of mutex...\n")
-	fmt.Println("A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running " +
-		"the critical section of code at any point of time to prevent race condition from happening.")
-	fmt.Println("Mutex is available in the sync package. There are two methods defined on Mutex namely Lock and " +
-		"Unlock. Any code that is present between a call to Lock and Unlock will be executed by only one Goroutine, " +
-		"thus avoiding race condition.")
+	/*
+	A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running the critical section
+	of code at any point of time to prevent race condition from happening.
+	Mutex is available in the sync package. There are two methods defined on Mutex namely Lock and Unlock. Any code
+	that is present between a call to Lock and Unlock will be executed by only one Goroutine, thus avoiding race condition.
+	 */
 	// In the below code, x = x + 1 will be executed by only one Goroutine at any point of time thus preventing race condition.
 	/*
 	mutex.Lock()
 	x = x + 1
 	mutex.Unlock()
 	*/
-	fmt.Println("If one Goroutine already holds the lock and if a new Goroutine is trying to acquire a lock, " +
-		"the new Goroutine will be blocked until the mutex is unlocked.")
+	/*
+	If one Goroutine already holds the lock and if a new Goroutine is trying to acquire a lock, the new Goroutine will
+	be blocked until the mutex is unlocked.
+	 */
 
 	fmt.Printf("\nBeginning of a simple program with race condition...\n")
 	var w sync.WaitGroup
@@ -97,6 +100,8 @@ func RunMutexes() {
 	fmt.Println("final value of x after solved with channel", x)
 
 	fmt.Printf("\nBeginning of mutex vs channel comparison...\n")
-	fmt.Println("In general use channels when Goroutines need to communicate with each other and mutexes when " +
-		"only one Goroutine should access the critical section of code.")
+	/*
+	In general use channels when Goroutines need to communicate with each other and mutexes when only one Goroutine
+	should access the critical section of code.
+	 */
 }

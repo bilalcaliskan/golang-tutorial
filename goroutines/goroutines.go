@@ -25,11 +25,13 @@ func alphabets() {
 
 func RunGoroutines() {
 	fmt.Printf("\nBeginning of starting Goroutines...\n")
-	fmt.Println("When a new Goroutine is started, the goroutine call returns immediately. Unlike functions, the " +
-		"control does not wait for the Goroutine to finish executing. The control returns immediately to the next line " +
-		"of code after the Goroutine call and any return values from the Goroutine are ignored.")
-	fmt.Println("The main Goroutine should be running for any other Goroutines to run. If the main Goroutine " +
-		"terminates then the program will be terminated and no other Goroutine will run.")
+	/*
+	When a new Goroutine is started, the goroutine call returns immediately. Unlike functions, the control does not
+	wait for the Goroutine to finish executing. The control returns immediately to the next line of code after the
+	Goroutine call and any return values from the Goroutine are ignored.
+	The main Goroutine should be running for any other Goroutines to run. If the main Goroutine terminates then the
+	program will be terminated and no other Goroutine will run.
+	 */
 	go hello()
 	time.Sleep(1 * time.Second)
 	fmt.Println("main goroutine")
