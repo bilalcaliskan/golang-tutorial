@@ -1,6 +1,6 @@
 package main
 
-import "golang-tutorial/reflection"
+import "golang-tutorial/exercises"
 
 func main() {
 	//arrays.Run()
@@ -22,5 +22,7 @@ func main() {
 	//error_handling.RunPanicAndRecover()
 	//error_handling.RunPanicAndRecover2()
 	//first_class.RunFirstClassFunctions()
-	reflection.RunReflection()
+	//reflection.RunReflection()
+	//exercises.ReadFiles()
+	exercises.WriteFiles()
 }

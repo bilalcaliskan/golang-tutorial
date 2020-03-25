@@ -46,7 +46,12 @@ func createQueryNum(q interface{}) {
 func createQueryComplete(q interface{}) {
 	if reflect.ValueOf(q).Kind() == reflect.Struct {
 		t := reflect.TypeOf(q).Name()
-		query := fmt.Sprintf("insert into %s values(", t)
+		query := fmt.Sprintf("insert into %s(ordId) values(", t)
+		if t == "order" {
+			query = fmt.Sprintf("insert into %s(ordId, customerId) values(", t)
+		} else if t == "employee" {
+			query = fmt.Sprintf("insert into %s(empName, empId, empTown, empSalary, empCountry) values(", t)
+		}
 		v := reflect.ValueOf(q)
 		for i := 0; i < v.NumField(); i++ {
 			switch v.Field(i).Kind() {
@@ -150,7 +155,6 @@ func RunReflection() {
 		customerId: 56,
 	}
 	createQueryComplete(f)
-
 	e := employee{
 		name:    "Naveen",
 		id:      565,
