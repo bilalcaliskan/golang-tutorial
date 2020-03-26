@@ -1,8 +1,10 @@
 package main
 
-import "golang-tutorial/exercises"
+import "golang-tutorial/types"
 
 func main() {
+	//variables.RunVariables()
+	types.RunTypes()
 	//arrays.Run()
 	//slices.Run()
 	//variadicfunctions.Run()
@@ -24,5 +26,5 @@ func main() {
 	//first_class.RunFirstClassFunctions()
 	//reflection.RunReflection()
 	//exercises.ReadFiles()
-	exercises.WriteFiles()
+	//exercises.WriteFiles()
 }
