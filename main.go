@@ -1,13 +1,16 @@
 package main
 
-import "golang-tutorial/packages"
+import "golang-tutorial/switch_statement"
 
 func main() {
 	//variables.RunVariables()
 	//types.RunTypes()
 	//constants.RunConstants()
 	//functions.RunFunctions()
-	packages.RunPackages()
+	//packages.RunPackages()
+	//conditionals.RunConditionals()
+	//loops.RunLoops()
+	switch_statement.RunSwitchStatement()
 	//arrays.Run()
 	//slices.Run()
 	//variadicfunctions.Run()

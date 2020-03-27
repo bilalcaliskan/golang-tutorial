@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="39fdeb27-defb-4dd9-83f6-4e9ec37db076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channels/select.go" beforeDir="false" afterPath="$PROJECT_DIR$/channels/select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conditionals/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/conditionals/conditionals.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/constants/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_handling/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/error_handling/error_handling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_class/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/first_class/first_class.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/interfaces1.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/interfaces1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutexes/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/mutexes/mutexes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/packages/packages.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflection/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/reflection/reflection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variables/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/variables/variables.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variadicfunctions/variadicfunctions.go" beforeDir="false" afterPath="$PROJECT_DIR$/variadicfunctions/variadic_functions.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,29 +150,29 @@
     </state>
     <state x="619" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1579517181577" />
     <state x="619" y="253" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583743355593" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1585319490358">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1585342879879">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1584904488728" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585319490358" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585342879879" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996115" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1585319490358">
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1585342879878">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1874" height="354" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1584904488728" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585319490358" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585342879878" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1585319490357">
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1585342879878">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1874" height="354" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1584904488728" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585319490357" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585342879878" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1585319490358">
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1585342879879">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1874" height="354" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1584904488728" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585319490358" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585342879879" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
     <state width="819" height="345" key="GridCell.Tab.1.bottom" timestamp="1585163227293">
       <screen x="0" y="23" width="1680" height="1027" />

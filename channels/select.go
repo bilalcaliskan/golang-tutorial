@@ -24,7 +24,7 @@ func RunSelect() {
 	fmt.Printf("\nBeginning of introduction...\n")
 	fmt.Println("The select statement is used to choose from multiple send/receive channel operations. The select " +
 		"statement blocks until one of the send/receive operation is ready. If multiple operations are ready, one of " +
-		"them is chosen at random. The syntax is similar to switch except that each of the case statement will be a " +
+		"them is chosen at random. The syntax is similar to switch_statement except that each of the case statement will be a " +
 		"channel operation.")
 	output1 := make(chan string)
 	output2 := make(chan string)

@@ -181,7 +181,7 @@ func RunInterfaces1() {
 	var ss interface{} = 12
 	assert(ss)
 
-	fmt.Printf("\nBeginning of type switch...\n")
+	fmt.Printf("\nBeginning of type switch_statement...\n")
 	findType("Naveen")
 	findType(77)
 	findType(89.98)

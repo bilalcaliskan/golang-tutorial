@@ -31,7 +31,7 @@ func RunConstants() {
 	/*
 	In the above program, a is a variable and hence it can be assigned to the result of the function math.Sqrt(4).
 	b is a constant and the value of b needs to be know at compile time. The function math.Sqrt(4) will be evaluated
-	only during run time and hence const b = math.Sqrt(4) throws error main.go:11: const initializer math.Sqrt(4) is
+	only during run time and hence const b = math.Sqrt(4) throws error switch_statement.go:11: const initializer math.Sqrt(4) is
 	not a constant if we uncomment constant decleration.
 	 */
 
