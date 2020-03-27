@@ -1,10 +1,13 @@
 package main
 
-import "golang-tutorial/types"
+import "golang-tutorial/packages"
 
 func main() {
 	//variables.RunVariables()
-	types.RunTypes()
+	//types.RunTypes()
+	//constants.RunConstants()
+	//functions.RunFunctions()
+	packages.RunPackages()
 	//arrays.Run()
 	//slices.Run()
 	//variadicfunctions.Run()
