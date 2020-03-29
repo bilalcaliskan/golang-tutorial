@@ -1,6 +1,6 @@
 package main
 
-import "golang-tutorial/switch_statement"
+import "golang-tutorial/interfaces"
 
 func main() {
 	//variables.RunVariables()
@@ -10,14 +10,17 @@ func main() {
 	//packages.RunPackages()
 	//conditionals.RunConditionals()
 	//loops.RunLoops()
-	switch_statement.RunSwitchStatement()
-	//arrays.Run()
-	//slices.Run()
-	//variadicfunctions.Run()
-	//structs.Run()
-	//methods.Run()
+	//switch_statement.RunSwitchStatement()
+	//arrays.RunArrays()
+	//slices.RunSlices()
+	//variadic_functions.RunVariadicFunctions()
+	//maps.RunMaps()
+	//strings.RunStrings()
+	//pointers.RunPointers()
+	//structures.RunStructures()
+	//methods.RunMethods()
 	//interfaces.RunInterfaces1()
-	//interfaces.RunInterfaces2()
+	interfaces.RunInterfaces2()
 	//goroutines.RunGoroutines()
 	//goroutines.RunChannels()
 	//goroutines.RunBufferedPools()

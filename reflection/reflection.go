@@ -131,7 +131,7 @@ func RunReflection() {
 	/*
 	3- NumField() and Field() methods:
 	The NumField() method returns the number of fields in a struct and the Field(i int) method returns the reflect.Value
-	of the ith field. You should first check the interface kind is struct because NumField and Field only works on structs.
+	of the ith field. You should first check the interface kind is struct because NumField and Field only works on structures.
 	*/
 	o = order{
 		ordId:      456,

@@ -14,10 +14,10 @@ func RunInheritance() {
 	post1 := post{"Inheritence in Go", "aslkdjalskdjsaldkj", author1}
 	post1.details()
 
-	fmt.Printf("\nBeginning of embedding slice of structs...\n")
+	fmt.Printf("\nBeginning of embedding slice of structures...\n")
 	post2 := post{
 		"Struct instead of Classes in Go",
-		"Go does not support classes but methods can be added to structs",
+		"Go does not support classes but methods can be added to structures",
 		author1,
 	}
 	post3 := post{
