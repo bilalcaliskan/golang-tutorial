@@ -1,6 +1,8 @@
 package main
 
-import "golang-tutorial/interfaces"
+import (
+	"golang-tutorial/channels"
+)
 
 func main() {
 	//variables.RunVariables()
@@ -20,9 +22,10 @@ func main() {
 	//structures.RunStructures()
 	//methods.RunMethods()
 	//interfaces.RunInterfaces1()
-	interfaces.RunInterfaces2()
+	//interfaces.RunInterfaces2()
+	//concurrency.RunConcurrency()
 	//goroutines.RunGoroutines()
-	//goroutines.RunChannels()
+	channels.RunChannels()
 	//goroutines.RunBufferedPools()
 	//channels.RunWorkerPoolsDemo()
 	//channels.RunSelect()
