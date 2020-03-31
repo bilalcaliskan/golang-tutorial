@@ -5,7 +5,7 @@ import "fmt"
 type post struct {
 	title string
 	content string
-	author
+	author // this field can also be declared as anonymous field
 }
 
 func (p post) details() {

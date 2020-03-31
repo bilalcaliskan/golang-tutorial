@@ -1,7 +1,7 @@
-package channels
+package concurrency
 
 import (
-	"fmt"
+	"log"
 	"math/rand"
 	"sync"
 	"time"
@@ -47,7 +47,7 @@ func createWorkerPool(noOfWorkers int) {
 		go worker(&wg)
 	}
 	wg.Wait()
-	fmt.Println("Closing results channel...")
+	log.Println("Closing results channel...")
 	close(results)
 }
 
@@ -58,30 +58,38 @@ func allocate(noOfJobs int) {
 			id:       i,
 			randomNo: randomNo,
 		}
+		log.Printf("Created job with %d and %d", job.id, job.randomNo)
 		jobs <- job
 	}
-	fmt.Println("Closing jobs channel...")
+	log.Println("Closing jobs channel...")
 	close(jobs)
 }
 
 func result(done chan bool) {
 	for result := range results {
-		fmt.Printf("Len results %d, Job id %d, input random no %d , sum of digits %d\n", len(results),
+		log.Printf("Len results %d, Job id %d, input random no %d , sum of digits %d\n", len(results),
 			result.job.id, result.job.randomNo, result.sumOfDigits)
 	}
 	done <- true
 }
 
 func RunWorkerPoolsDemo() {
+	/*
+	The following are the core functionalities of our worker pool:
+		- Creation of a pool of Goroutines which listen on an input buffered channel waiting for jobs to be assigned
+		- Addition of jobs to the input buffered channel
+		- Writing results to an output buffered channel after job completion
+		- Read and print results from the output buffered channel
+	*/
 	startTime := time.Now()
 	noOfJobs := 100
 	go allocate(noOfJobs)
 	done := make(chan bool)
 	go result(done)
-	noOfWorkers := 10
+	noOfWorkers := 100
 	createWorkerPool(noOfWorkers)
 	<- done
 	endTime := time.Now()
 	diff := endTime.Sub(startTime)
-	fmt.Println("total time taken ", diff.Seconds(), "seconds")
+	log.Println("total time taken ", diff.Seconds(), "seconds")
 }

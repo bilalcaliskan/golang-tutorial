@@ -1,4 +1,4 @@
-package error_handling
+package defers
 
 import "fmt"
 
@@ -8,5 +8,5 @@ type person struct {
 }
 
 func (p person) fullName() {
-	fmt.Printf("%s %s", p.firstName, p.lastName)
+	fmt.Printf("%s %s",p.firstName,p.lastName)
 }

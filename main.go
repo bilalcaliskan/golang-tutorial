@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang-tutorial/channels"
-)
+import "golang-tutorial/error_handling"
 
 func main() {
 	//variables.RunVariables()
@@ -24,15 +22,17 @@ func main() {
 	//interfaces.RunInterfaces1()
 	//interfaces.RunInterfaces2()
 	//concurrency.RunConcurrency()
-	//goroutines.RunGoroutines()
-	channels.RunChannels()
-	//goroutines.RunBufferedPools()
-	//channels.RunWorkerPoolsDemo()
-	//channels.RunSelect()
-	//mutexes.RunMutexes()
+	//concurrency.RunGoroutines()
+	//concurrency.RunChannels()
+	//concurrency.RunBufferedPools()
+	//concurrency.RunWorkerPoolsDemo()
+	//concurrency.RunSelect()
+	//concurrency.RunMutexes()
+	//oop.RunClasses()
 	//oop.RunInheritance()
 	//oop.RunPolymorphism()
-	//error_handling.RunErrorHandling()
+	//defers.RunDefers()
+	error_handling.RunErrorHandling()
 	//error_handling.RunPanicAndRecover()
 	//error_handling.RunPanicAndRecover2()
 	//first_class.RunFirstClassFunctions()

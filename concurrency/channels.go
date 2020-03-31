@@ -1,4 +1,4 @@
-package channels
+package concurrency
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package mutexes
+package concurrency
 
 import (
 	"fmt"
@@ -52,21 +52,17 @@ func RunMutexes() {
 
 	fmt.Printf("\nBeginning of mutex...\n")
 	/*
-	A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running the critical section
-	of code at any point of time to prevent race condition from happening.
+	First of all, Mutex is a struct type. A Mutex is used to provide a locking mechanism to ensure that only one
+	Goroutine is running the critical section of code at any point of time to prevent race condition from happening.
 	Mutex is available in the sync package. There are two methods defined on Mutex namely Lock and Unlock. Any code
 	that is present between a call to Lock and Unlock will be executed by only one Goroutine, thus avoiding race condition.
-	 */
-	// In the below code, x = x + 1 will be executed by only one Goroutine at any point of time thus preventing race condition.
-	/*
-	mutex.Lock()
-	x = x + 1
-	mutex.Unlock()
-	*/
-	/*
 	If one Goroutine already holds the lock and if a new Goroutine is trying to acquire a lock, the new Goroutine will
 	be blocked until the mutex is unlocked.
-	 */
+	In the below code, x = x + 1 will be executed by only one Goroutine at any point of time thus preventing race condition.
+	*/
+	//mutex.Lock()
+	//x = x + 1
+	//mutex.Unlock()
 
 	fmt.Printf("\nBeginning of a simple program with race condition...\n")
 	var w sync.WaitGroup
@@ -78,6 +74,10 @@ func RunMutexes() {
 	fmt.Println("final value of x", x)
 
 	fmt.Printf("\nBeginning of solution of above problem with mutex...\n")
+	/*
+	In the program above, we spawn 1000 Goroutines. If each increments the value of x by 1, the final desired value of
+	x should be 1000. In this section, we will fix the race condition in the program above using mutex.
+	*/
 	x = 0
 	var w1 sync.WaitGroup
 	var m1 sync.Mutex
@@ -87,6 +87,16 @@ func RunMutexes() {
 	}
 	w1.Wait()
 	fmt.Println("final value of x after solved with mutex", x)
+	/*
+	Mutex is a struct type and we create a zero valued variable m of type Mutex. In the above program we have changed
+	the increment function so that the code which increments x x = x + 1 is between m.Lock() and m.Unlock(). Now this
+	code is void of any race conditions since only one Goroutine is allowed to execute this piece of code at any point
+	of time.
+	 */
+	/*
+	It is important to pass the address of the mutex. If the mutex is passed by value instead of passing the address,
+	each Goroutine will have its own copy of the mutex and the race condition will still occur.
+	 */
 
 	fmt.Printf("\nBeginning of solution of above problem with channel...\n")
 	x = 0
@@ -98,10 +108,18 @@ func RunMutexes() {
 	}
 	w2.Wait()
 	fmt.Println("final value of x after solved with channel", x)
+	/*
+	In the program above, we have created a buffered channel of capacity 1 and this is passed to the increment Goroutine.
+	This buffered channel is used to ensure that only one Goroutine access the critical section of code which increments
+	x. This is done by passing true to the buffered channel just before x is incremented. Since the buffered channel has
+	a capacity of 1, all other Goroutines trying to write to this channel are blocked until the value is read from this
+	channel after incrementing x in line no. 10. Effectively this allows only one Goroutine to access the critical section.
+	 */
 
 	fmt.Printf("\nBeginning of mutex vs channel comparison...\n")
 	/*
 	In general use channels when Goroutines need to communicate with each other and mutexes when only one Goroutine
-	should access the critical section of code.
+	should access the critical section of code. In the case of the problem which we solved above, I would prefer to use
+	mutex since this problem does not require any communication between the goroutines. Hence mutex would be a natural fit.
 	 */
 }
