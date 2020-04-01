@@ -26,10 +26,14 @@ func createQuery(q interface{}) {
 }
 
 func createQueryKind(q interface{}) {
-	t := reflect.TypeOf(q)
-	k := t.Kind()
-	fmt.Println("Type ", t)
-	fmt.Println("Kind ", k)
+	typeOf := reflect.TypeOf(q)
+	valueOf := reflect.ValueOf(q)
+	tKind := typeOf.Kind()
+	vKind := valueOf.Kind()
+	fmt.Println("Type ", typeOf)
+	fmt.Println("Value ", valueOf)
+	fmt.Println("typeOf kind ", tKind)
+	fmt.Println("valueOf kind ", vKind)
 }
 
 func createQueryNum(q interface{}) {
@@ -53,6 +57,9 @@ func createQueryComplete(q interface{}) {
 			query = fmt.Sprintf("insert into %s(empName, empId, empTown, empSalary, empCountry) values(", t)
 		}
 		v := reflect.ValueOf(q)
+		fmt.Println("valueOf = ", reflect.ValueOf(q))
+		fmt.Println("typeOf = ", reflect.TypeOf(q))
+		fmt.Println("numField = ", reflect.ValueOf(q).NumField())
 		for i := 0; i < v.NumField(); i++ {
 			switch v.Field(i).Kind() {
 			case reflect.Int:
@@ -120,7 +127,7 @@ func RunReflection() {
 	createQuery(o)
 	/*
 	2- reflect.Kind:
-	There is one more important type in the re	flection package called Kind. The types Kind and Type in the reflection
+	There is one more important type in the re	reflection package called Kind. The types Kind and Type in the reflection
 	package might seem similar but they have a difference which will be clear from the program below.
 	*/
 	o = order{

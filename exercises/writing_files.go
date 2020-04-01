@@ -54,7 +54,7 @@ func WriteFiles() {
 	1- Create the file
 	2- Write the string to the file
 	 */
-	f, err := os.Create("exercises/files/test2.txt")
+	f, err := os.Create("exercises/files/test4.txt")
 	if err != nil {
 		fmt.Println(err)
 	} else {

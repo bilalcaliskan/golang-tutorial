@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"os/user"
 )
 
 func ReadFiles() {
@@ -17,7 +18,7 @@ func ReadFiles() {
 	ReadFile function of the ioutil package.
 	 */
 	// Below method reads the file into memory and returns a byte slice which is stored in data
-	data, err := ioutil.ReadFile("exercises/test.txt")
+	data, err := ioutil.ReadFile("exercises/files/test.txt")
 	if err != nil {
 		fmt.Println("File reading error", err)
 	}
@@ -31,9 +32,15 @@ func ReadFiles() {
 	1- Using absolute file path
 	2- Passing the file path as a command line flag
 	3- Bundling the text file along with the binary
-	 */
+	*/
 	// 1- Using absolute file path
-	data2, err2 := ioutil.ReadFile("/Users/bilal.caliskan/go/src/golang-tutorial/exercises/test.txt")
+	usr, err := user.Current()
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(usr.HomeDir)
+	data2, err2 := ioutil.ReadFile(fmt.Sprintf("%s/code-works/go/src/golang-tutorial/exercises/files/test.txt",
+		usr.HomeDir))
 	if err2 != nil {
 		fmt.Println("File reading error", err2)
 	} else {
@@ -47,11 +54,11 @@ func ReadFiles() {
 	a short description of the flag.
 	 */
 	// This function returns the address of the string variable that stores the value of the flag.
-	fptr := flag.String("fpath", "test.txt", "file path to read from")
+	fpath0 := flag.String("fpath0", "test.txt", "file path to read from")
 	// flag.Parse() should be called before any flag is accessed by the program.
 	//flag.Parse()
-	fmt.Println("value of fpath is", *fptr)
-	data3, err3 := ioutil.ReadFile(*fptr)
+	fmt.Println("value of fpath0 is", *fpath0)
+	data3, err3 := ioutil.ReadFile(*fpath0)
 	if err3 != nil {
 		fmt.Println("File reading error", err3)
 	} else {
@@ -67,7 +74,7 @@ func ReadFiles() {
 	 */
 	box := packr.NewBox("files/")
 	data4 := box.String("test.txt")
-	fmt.Println("Contents of file:", data4)
+	fmt.Println("Contents of file with the help of packr:", data4)
 	/*
 	Very interesting thing about packr is that if you change the content
 	of file after binary compiled, you will see that your changes effected already built binary. You can see that the
@@ -84,10 +91,10 @@ func ReadFiles() {
 	large it doesn't make sense to read the entire file into memory especially if you are running low on RAM. A more
 	optimal way is to read the file in small chunks. This can be done with the help of the bufio package.
 	 */
-	fptr = flag.String("fpath2", "test.txt", "file path to read from")
+	fpath1 := flag.String("fpath1", "test.txt", "file path to read from")
 	flag.Parse()
 
-	f, err := os.Open(*fptr)
+	f, err := os.Open(*fpath1)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -96,8 +103,8 @@ func ReadFiles() {
 			log.Fatal(err)
 		}
 	}()
-	r := bufio.NewReader(f)
-	b := make([]byte, 3)
+	r := bufio.NewReader(f) // we create a buffered reader here
+	b := make([]byte, 3) // we create a byte slice of length and capacity 3 into which the bytes of the file will be read
 	for {
 		n, err := r.Read(b)
 		if err != nil {
@@ -106,9 +113,12 @@ func ReadFiles() {
 		}
 		fmt.Println(string(b[0:n]))
 	}
+	/*
+	Once the end of file is reached, it will return a EOF error. So it will break the for loop.
+	*/
 
 	fmt.Printf("\nBeginning of reading a file line by line...\n")
-	f, err = os.Open(*fptr)
+	f, err = os.Open(*fpath1)
 	if err != nil {
 		log.Fatal(err)
 	}
