@@ -26,6 +26,17 @@ func deferredFullName(firstName *string, lastName *string) {
 }
 
 func recoverName() {
+	/*
+	The recover built-in function allows a program to manage behavior of a
+	panicking goroutine. Executing a call to recover inside a deferred
+	function (but not any function called by it) stops the panicking sequence
+	by restoring normal execution and retrieves the error value passed to the
+	call of panic. If recover is called outside the deferred function it will
+	not stop a panicking sequence. In this case, or when the goroutine is not
+	panicking, or if the argument supplied to panic was nil, recover returns
+	nil. Thus the return value from recover reports whether the goroutine is
+	panicking.
+	*/
 	if r := recover(); r != nil {
 		fmt.Println("recovered from", r)
 	}
@@ -47,15 +58,17 @@ func RunPanicAndRecover() {
 	fmt.Printf("\nBeginning of introduction...\n")
 	/*
 	The idiomatic way to handle abnormal conditions in a program in Go is using errors. Errors are sufficient for most
-	of the abnormal conditions arising in the program. But there are some situations where the program cannot simply
-	continue executing after an abnormal situation. In this case we use panic to terminate the program. When a function
-	encounters a panic, its execution is stopped, any deferred functions are executed and then the control returns to
-	its caller. This process continues until all the functions of the current goroutine have returned at which point
-	the program prints the panic message, followed by the stack trace and then terminates. This concept will be more
-	clear when we write a sample program.
+	of the abnormal conditions arising in the program.
+	But there are some situations where the program cannot simply continue executing after an abnormal situation. In
+	this case we use panic to terminate the program. When a function encounters a panic, its execution is stopped, any
+	deferred functions are executed and then the control returns to its caller. This process continues until all the
+	functions of the current goroutine have returned at which point the program prints the panic message, followed by
+	the stack trace and then terminates. This concept will be more clear when we write a sample program.
 	It is possible to regain control of a panicking program using recover. Panic and recover can be considered similar
 	to try-catch-finally idiom in other languages except that it is rarely used and when used is more elegant and
 	results in clean code.
+	Panic and recover can be considered similar to try-catch-finally idiom in other languages except that it is rarely
+	used and when used is more elegant and results in clean code.
 	 */
 
 	fmt.Printf("\nBeginning of when to use panic...\n")
@@ -73,8 +86,10 @@ func RunPanicAndRecover() {
 
 	fmt.Printf("\nBeginning of panic example...\n")
 	/*
-	The signature of the built in panic function is provided like that; func panic(interface{})
-	 */
+	The signature of the built in panic function is provided like that:
+		func panic(interface{})
+	The argument passed to panic will be printed when the program terminates.
+	*/
 	firstName := "Elon"
 	lastName := "Mask"
 	// uncomment below line to panic
@@ -88,32 +103,35 @@ func RunPanicAndRecover() {
 	control returns to its caller. This process continues until all the functions of the current goroutine have
 	returned at which point the program prints the panic message, followed by the stack trace and then terminates.
 	 */
-	defer fmt.Println("deferred call in main goroutine")
+	defer fmt.Println("first deferred call in main goroutine")
 	firstName = "Hasan"
 	lastName = "Huseyin"
 	// uncomment below line to panic. First deferred call on deferredFullName will be run, then the deferred call on main
 	// when deferredFullName function panics, any deferred function calls are first executed and then the control
-	//returns to the caller whose deferred calls are executed and so on until the top level caller is reached. Caller
+	// returns to the caller whose deferred calls are executed and so on until the top level caller is reached. Caller
 	// is the main goroutine in our case.
-	//deferredFullName(&firstName, nil)
+	// deferredFullName(&firstName, nil)
 	fmt.Println("returned normally from main")
 	/*
 	When all the deferred calls are executed from down to up, control reaches the top level function and hence the
 	program prints the panic message followed by the stack trace and then terminates.
+	If you uncomment line 102, you will see that program first runs deferred calls in LIFO order, and then prints the
+	panic message.
 	 */
 
 	fmt.Printf("\nBeginning of recover...\n")
 	/*
 	Recover is a builtin function which is used to regain control of a panicking goroutine. The signature of recover
-	function is like that; func recover() interface{}.
+	function is like that:
+		func recover() interface{}.
 	Recover is useful only when called inside deferred functions. Executing a call to recover inside a deferred
 	function stops the panicking sequence by restoring normal execution and retrieves the error value passed to the
 	call of panic. If recover is called outside the deferred function, it will not stop a panicking sequence.
 	 */
-	defer fmt.Println("deferred call in main")
+	defer fmt.Println("second deferred call in main goroutine")
 	firstName = "Elon"
 	recoverFullName(&firstName, nil)
-	fmt.Println("returned normally from main")
+	fmt.Println("returned normally from main goroutine")
 	/*
 	After execution of recover(), the panicking stops and the control returns to the caller, in this case the main
 	function and the program continues to execute normally from line 29 in main right after the panic.

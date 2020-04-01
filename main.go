@@ -1,6 +1,6 @@
 package main
 
-import "golang-tutorial/error_handling"
+import "golang-tutorial/reflection"
 
 func main() {
 	//variables.RunVariables()
@@ -32,11 +32,11 @@ func main() {
 	//oop.RunInheritance()
 	//oop.RunPolymorphism()
 	//defers.RunDefers()
-	error_handling.RunErrorHandling()
+	//error_handling.RunErrorHandling()
 	//error_handling.RunPanicAndRecover()
 	//error_handling.RunPanicAndRecover2()
 	//first_class.RunFirstClassFunctions()
-	//reflection.RunReflection()
+	reflection.RunReflection()
 	//exercises.ReadFiles()
 	//exercises.WriteFiles()
 }

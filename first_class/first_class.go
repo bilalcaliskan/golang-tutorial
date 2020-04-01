@@ -9,6 +9,7 @@ func simple(a func(a, b int) int) {
 	fmt.Println(a(60, 7))
 }
 
+// this function returns another function(func(a, b int) int)
 func simple2() func(a, b int) int {
 	f := func(a, b int) int {
 		return a + b
@@ -51,18 +52,25 @@ func iMap(integerSlice []int, multiplierFunction func(int) int) []int {
 }
 
 func RunFirstClassFunctions() {
+	fmt.Printf("\nBeginning of introduction to first class functions...\n")
 	/*
 	A language which supports first class functions allows functions to be assigned to variables, passed as arguments
 	to other functions and returned from other functions. Go has support for first class functions.
-	 */
+	*/
 	fmt.Printf("\nBeginning of anonymous functions...\n")
-	// These kind of functions like below are called anonymous functions since they do not have a name.
+	/*
+	Let's start with a simple example which assigns a function to a variable.
+	These kind of functions like below are called anonymous functions since they do not have a name.
+	*/
 	a := func() {
 		fmt.Println("hello world first first class function")
 	}
 	a()
 	fmt.Printf("%T\n", a)
-	// It is also possible to call a anonymous function without assigning it to a variable.
+	/*
+	The only way to call this function is using the variable a.
+	It is also possible to call a anonymous function without assigning it to a variable.
+	*/
 	func() {
 		fmt.Println("hello world second first class function")
 	}()
@@ -73,7 +81,8 @@ func RunFirstClassFunctions() {
 
 	fmt.Printf("\nBeginning of user defined function types...\n")
 	/*
-	type add func(a int, b int) int
+	Just like we define our own struct types, it is possible to define our own function types:
+		type add func(a int, b int) int
 	The code snippet above creates a new function type add which accepts two integer arguments and returns a integer.
 	Now we can define variables of type add.
 	 */
@@ -89,12 +98,21 @@ func RunFirstClassFunctions() {
 		1- takes one or more functions as arguments
 		2- returns a function as its result
 	 */
-	// 1- Passing functions as arguments to other functions
+	/*
+	1- Passing functions as arguments to other functions
+	In the below example, in line no. 8 we define a function simple which takes a function which accepts two int
+	arguments and returns a int as a parameter. Inside the main function in line no. 105 we create a anonymous function
+	f whose signature matches the parameter of the function simple. We call simple and pass f as an argument to it in
+	the next line. This program prints 67 as output.
+	*/
 	f := func(a, b int) int {
 		return a + b
 	}
 	simple(f)
-	// 2- Returning functions from other functions
+	/*
+	2- Returning functions from other functions
+	Now let's rewrite the program above and return a function from the simple2 function.
+	*/
 	d := simple2()
 	fmt.Println(d(60, 7))
 
@@ -104,22 +122,28 @@ func RunFirstClassFunctions() {
 	defined outside the body of the function.
 	*/
 	e := 5
+	// closures are special case of anonymous functions.
 	func() {
 		fmt.Println("e = ", e)
 	}()
-	/*
-	Every closure is bound to its own surrounding variable. Let's understand what this means by using a simple example.
-	 */
 
 	fmt.Printf("\nBeginning of Closure example...\n")
+	/*
+	Every closure is bound to its own surrounding variable. Let's understand what this means by using a simple example.
+	*/
 	j := appendStr()
 	k := appendStr()
 	fmt.Println(j("World"))
 	fmt.Println(k("Everyone"))
-
 	fmt.Println(j("Gopher"))
 	fmt.Println(k("!"))
 	/*
+	In the program above, the function appendStr returns a closure. This closure is bound to the variable t. Let's
+	understand what this means.
+	The variables j and k declared in line nos. 134, 135 are closures and they are bound to their own value of t.
+	We first call j with the parameter World. Now the value of j's version of t becomes Hello World.
+	In line no. 137 we call k with the parameter Everyone. Since k is bound to its own variable t, k's version of t has
+	a initial value of Hello again. Hence after this function call, the value of k's version of t becomes Hello Everyone
 	Key note about closures is that Closures are anonymous functions which access the variables defined outside the
 	body of the function.
 	 */
