@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="39fdeb27-defb-4dd9-83f6-4e9ec37db076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/files/concurrent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/files/concurrent.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/reading_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/reading_files.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/writing_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/writing_files.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/concurrent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/concurrent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/lines.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/test3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/files/test4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/files/test4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/reading_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/reading_files.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/understanding_pointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/understanding_pointers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/writing_files.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbot/writing_files.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reflection/reflection.go" beforeDir="false" afterPath="$PROJECT_DIR$/reflection/reflection.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +56,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/exercises/golangbot" />
+      <recent name="$PROJECT_DIR$/exercises" />
       <recent name="$PROJECT_DIR$/defers" />
       <recent name="$PROJECT_DIR$/oop/employee" />
       <recent name="$PROJECT_DIR$/concurrency" />
-      <recent name="$PROJECT_DIR$/exercises/files" />
-      <recent name="$PROJECT_DIR$/error_handling" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/tutorialedge">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -81,6 +86,24 @@
         <option name="GoBeforeRunTask" command="install" />
       </method>
     </configuration>
+    <configuration name="go build golang-tutorial/exercises/golangbot" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/golangbot/reading_files.go" />
+      <package value="golang-tutorial/exercises/golangbot" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/tutorialedge" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/tutorialedge/main.go" />
+      <package value="golang-tutorial/exercises/tutorialedge" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -94,6 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge" />
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/golangbot" />
         <item itemvalue="Go Build.go build golang-tutorial" />
       </list>
     </recent_temporary>
@@ -150,32 +175,36 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2586" y="186" key="#go_build_golang-tutorial/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585398738065" />
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/golangbot" timestamp="1586857921441">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/golangbot/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586857921441" />
     <state x="2663" y="298" width="424" height="483" key="FileChooserDialogImpl" timestamp="1585597450529">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="298" width="424" height="483" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585597450529" />
-    <state width="1874" height="238" key="GridCell.Tab.0.bottom" timestamp="1585776863238">
+    <state width="1874" height="238" key="GridCell.Tab.0.bottom" timestamp="1586866239536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585776863238" />
+    <state width="1874" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586866239536" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477434" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996115" />
-    <state width="1874" height="238" key="GridCell.Tab.0.center" timestamp="1585776863238">
+    <state width="1874" height="238" key="GridCell.Tab.0.center" timestamp="1586866239536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585776863238" />
+    <state width="1874" height="238" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586866239536" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477433" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1874" height="238" key="GridCell.Tab.0.left" timestamp="1585776863236">
+    <state width="1874" height="238" key="GridCell.Tab.0.left" timestamp="1586866239536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585776863236" />
+    <state width="1874" height="238" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586866239536" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477433" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1874" height="238" key="GridCell.Tab.0.right" timestamp="1585776863238">
+    <state width="1874" height="238" key="GridCell.Tab.0.right" timestamp="1586866239536">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585776863238" />
+    <state width="1874" height="238" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586866239536" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477434" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
     <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1585513939450">

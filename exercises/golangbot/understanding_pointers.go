@@ -1,4 +1,4 @@
-package exercises
+package main
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ func printPointer(myBoolPointer *bool) { // use a pointer type for this paramete
 	fmt.Println(*myBoolPointer) // print the value at the pointer that gets passed in
 }
 
-func RunUnderstandingPointers() {
+func runUnderstandingPointers() {
 	/*
 	We can print the types of pointer variables using reflection
 	 */

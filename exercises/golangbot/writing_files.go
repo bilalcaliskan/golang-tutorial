@@ -1,4 +1,4 @@
-package exercises
+package main
 
 import (
 	"fmt"
@@ -46,7 +46,7 @@ func consume(data chan int, done chan bool) {
 	done <- true
 }
 
-func WriteFiles() {
+func writeFiles() {
 	fmt.Printf("\nBeginning of writing string to a file...\n")
 	/*
 	One of the most common file writing operation is writing string to a file. This is quite simple to do. It consists

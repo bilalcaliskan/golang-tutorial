@@ -1,6 +1,8 @@
 package main
 
-import "golang-tutorial/exercises"
+import (
+	"golang-tutorial/exercises/golangbot"
+)
 
 func main() {
 	//variables.RunVariables()
@@ -39,5 +41,5 @@ func main() {
 	//reflection.RunReflection()
 	//exercises.ReadFiles()
 	//exercises.WriteFiles()
-	exercises.RunUnderstandingPointers()
+	golangbot.RunUnderstandingPointers()
 }

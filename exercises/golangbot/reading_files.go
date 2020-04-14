@@ -1,4 +1,4 @@
-package exercises
+package main
 
 import (
 	"bufio"
@@ -11,7 +11,7 @@ import (
 	"os/user"
 )
 
-func ReadFiles() {
+func readFiles() {
 	fmt.Printf("\nBeginning of reading an entire file into memory...\n")
 	/*
 	One of the most basic file operations is reading an entire file into memory. This is done with the help of the
