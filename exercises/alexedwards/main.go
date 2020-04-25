@@ -2,5 +2,8 @@ package main
 
 func main() {
 	// Check https://www.alexedwards.net/blog/ for all.
-	runHashingPasswords()
+	// runHashingPasswords()
+	// runJsonParsing()
+	// runRequestHandling()
+	runSessionManager()
 }

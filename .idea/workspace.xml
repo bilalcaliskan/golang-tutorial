@@ -56,7 +56,7 @@
       <recent name="$PROJECT_DIR$/concurrency" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/alexedwards">
+  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/gobyexample (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -67,24 +67,30 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build golang-tutorial" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <parameters value="-fpath0=laskdflkasdjf -fpath1=exercises/files/test.txt" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="golang-tutorial" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2">
-        <option name="GoBeforeRunTask" command="install" />
-      </method>
-    </configuration>
     <configuration name="go build golang-tutorial/exercises/alexedwards" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/exercises/alexedwards/json_parsing.go" />
       <package value="golang-tutorial/exercises/alexedwards" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/gobyexample (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/gobyexample/main.go" />
+      <package value="golang-tutorial/exercises/gobyexample" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/gobyexample" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/exercises/gobyexample/http_servers.go" />
+      <package value="golang-tutorial/exercises/gobyexample" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -119,10 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/gobyexample (1)" />
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/gobyexample" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/alexedwards" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/golangbot" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge" />
-        <item itemvalue="Go Build.go build golang-tutorial" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +190,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2581" y="179" width="588" height="721" key="#go_build_golang-tutorial/exercises/alexedwards/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587374669587" />
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample" timestamp="1587775507292">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775507292" />
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample_(1)" timestamp="1587775517076">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample_(1)/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775517076" />
     <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/golangbot" timestamp="1586857921441">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -191,28 +206,28 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="298" width="424" height="483" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585597450529" />
-    <state width="1874" height="238" key="GridCell.Tab.0.bottom" timestamp="1587375646462">
+    <state width="1874" height="301" key="GridCell.Tab.0.bottom" timestamp="1587775574870">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587375646462" />
+    <state width="1874" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775574870" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477434" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996115" />
-    <state width="1874" height="238" key="GridCell.Tab.0.center" timestamp="1587375646462">
+    <state width="1874" height="301" key="GridCell.Tab.0.center" timestamp="1587775574870">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587375646462" />
+    <state width="1874" height="301" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775574870" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477433" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1874" height="238" key="GridCell.Tab.0.left" timestamp="1587375646462">
+    <state width="1874" height="301" key="GridCell.Tab.0.left" timestamp="1587775574870">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587375646462" />
+    <state width="1874" height="301" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775574869" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477433" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1874" height="238" key="GridCell.Tab.0.right" timestamp="1587375646462">
+    <state width="1874" height="301" key="GridCell.Tab.0.right" timestamp="1587775574870">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="238" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587375646462" />
+    <state width="1874" height="301" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775574870" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585732477434" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
     <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1585513939450">
