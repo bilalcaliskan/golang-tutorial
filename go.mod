@@ -4,6 +4,7 @@ go 1.12
 
 require (
 	github.com/alexedwards/scs/v2 v2.3.0
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fatih/structs v1.1.0
 	github.com/go-redis/redis v6.15.6+incompatible
 	github.com/gobuffalo/envy v1.9.0 // indirect

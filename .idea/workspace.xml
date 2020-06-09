@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="39fdeb27-defb-4dd9-83f6-4e9ec37db076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercises/golangbook/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/golangbook/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercises/tutorialedge/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/tutorialedge/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -40,10 +41,10 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../loadmanager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -54,7 +55,7 @@
       <recent name="$PROJECT_DIR$/oop/employee" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/golangbook">
+  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/tutorialedge/jwt/client">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -74,21 +75,39 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build golang-tutorial/exercises/gobyexample" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/exercises/gobyexample/main.go" />
-      <package value="golang-tutorial/exercises/gobyexample" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build golang-tutorial/exercises/golangbook" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/exercises/golangbook/main.go" />
       <package value="golang-tutorial/exercises/golangbook" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/tutorialedge" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/tutorialedge/main.go" />
+      <package value="golang-tutorial/exercises/tutorialedge" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/tutorialedge/jwt/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/tutorialedge/jwt/client/client.go" />
+      <package value="golang-tutorial/exercises/tutorialedge/jwt/client" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build golang-tutorial/exercises/tutorialedge/jwt/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/exercises/tutorialedge/jwt/server/server.go" />
+      <package value="golang-tutorial/exercises/tutorialedge/jwt/server" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -105,39 +124,28 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge/jwt/client" />
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge/jwt/server" />
+        <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/golangbook" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/bloggolangorg/concurrency_patterns/context/server" />
-        <item itemvalue="Go Build.go build golang-tutorial/exercises/gobyexample" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -183,27 +191,31 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="298" width="424" height="483" key="FileChooserDialogImpl/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585597450529" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1589548657079">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1591689916216">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591689916216" />
     <state width="1874" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657079" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996115" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1589548657078">
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1591689916215">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.center/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591689916215" />
     <state width="1874" height="301" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1589548657078">
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1591689916215">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.left/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591689916215" />
     <state width="1874" height="301" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870351" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1589548657078">
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1591689916216">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.right/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591689916216" />
     <state width="1874" height="301" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1583761996114" />
@@ -227,9 +239,10 @@
     </state>
     <state width="1874" height="354" key="GridCell.Tab.1.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585513939450" />
     <state width="819" height="345" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585163227293" />
-    <state x="2319" y="160" key="SettingsEditor" timestamp="1585398724261">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="349" y="175" key="SettingsEditor" timestamp="1591343094727">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="349" y="175" key="SettingsEditor/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591343094727" />
     <state x="2319" y="160" key="SettingsEditor/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585398724261" />
     <state x="349" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585159751352" />
     <state x="2677" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585509812606">
