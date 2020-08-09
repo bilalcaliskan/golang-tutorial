@@ -5,5 +5,6 @@ func main() {
 	// runHashingPasswords()
 	// runJsonParsing()
 	// runRequestHandling()
-	runSessionManager()
+	// runSessionManager()
+	runInterfaces()
 }
