@@ -4,6 +4,7 @@
     <list default="true" id="39fdeb27-defb-4dd9-83f6-4e9ec37db076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercises/alexedwards/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/exercises/alexedwards/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +56,7 @@
       <recent name="$PROJECT_DIR$/oop/employee" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build golang-tutorial/exercises/alexedwards">
+  <component name="RunManager" selected="Go Build.go build golang-tutorial/books/blackhatgo">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -65,21 +67,21 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build golang-tutorial/books/blackhatgo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golang-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/books/blackhatgo/main.go" />
+      <package value="golang-tutorial/books/blackhatgo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build golang-tutorial/exercises/alexedwards" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/exercises/alexedwards/main.go" />
       <package value="golang-tutorial/exercises/alexedwards" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build golang-tutorial/exercises/golangbook" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/exercises/golangbook/main.go" />
-      <package value="golang-tutorial/exercises/golangbook" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -123,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build golang-tutorial/books/blackhatgo" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/alexedwards" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge/jwt/client" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge/jwt/server" />
         <item itemvalue="Go Build.go build golang-tutorial/exercises/tutorialedge" />
-        <item itemvalue="Go Build.go build golang-tutorial/exercises/golangbook" />
       </list>
     </recent_temporary>
   </component>
@@ -150,62 +152,30 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="490" y="204" width="800" height="676" key="#GOROOT" timestamp="1587819987650">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="490" y="204" key="#GOROOT/0.23.1680.1027@0.23.1680.1027" timestamp="1587819987650" />
-    <state x="2344" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587775667042">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2344" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775667042" />
-    <state x="2627" y="242" width="435" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1586941810211">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2627" y="242" width="435" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586941810211" />
     <state x="528" y="279" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595333584682">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="279" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027/-116.-1057.1920.1057@0.23.1680.1027" timestamp="1595333584682" />
-    <state x="2581" y="179" width="588" height="721" key="#go_build_golang-tutorial/exercises/alexedwards" timestamp="1587374669587">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2581" y="179" width="588" height="721" key="#go_build_golang-tutorial/exercises/alexedwards/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587374669587" />
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample" timestamp="1587775507292">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775507292" />
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample_(1)" timestamp="1587775517076">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/gobyexample_(1)/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587775517076" />
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/golangbot" timestamp="1586857921441">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2586" y="179" key="#go_build_golang-tutorial/exercises/golangbot/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586857921441" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1591690720809">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1597672380564">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591690720809" />
-    <state width="1874" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657079" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1591690720808">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1597672380564" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1597672380563">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.center/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591690720808" />
-    <state width="1874" height="301" key="GridCell.Tab.0.center/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1591690720807">
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1597672380563" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1597672380563">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.left/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591690720807" />
-    <state width="1874" height="301" key="GridCell.Tab.0.left/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870351" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1591690720808">
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1597672380563" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1597672380563">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="280" key="GridCell.Tab.0.right/-116.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1591690720808" />
-    <state width="1874" height="301" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587779870352" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589548657078" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1597672380563" />
     <state x="349" y="175" key="SettingsEditor" timestamp="1591343094727">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

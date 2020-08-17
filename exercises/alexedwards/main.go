@@ -6,5 +6,6 @@ func main() {
 	// runJsonParsing()
 	// runRequestHandling()
 	// runSessionManager()
-	runInterfaces()
+	// runInterfaces()
+	runRateLimit()
 }
