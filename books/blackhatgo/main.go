@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	runPortScanner()
+	// runPortScanner()
+	runTcpProxy()
 }

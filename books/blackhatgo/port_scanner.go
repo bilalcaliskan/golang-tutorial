@@ -111,7 +111,7 @@ func workerMultiChannel(host, proto string, ports, results chan int) {
 
 func runPortScanner() {
 	proto := "tcp"
-	host := "scanme.nmap.org"
+	host := "api.thevpnbeast.com"
 	// Scanning single port
 	/*
 	The first step in creating the port scanner is understanding how to initiate a connection from a client to a server.
