@@ -1,9 +1,5 @@
 package main
 
-import (
-	"golang-tutorial/exercises/golangbot"
-)
-
 func main() {
 	//variables.RunVariables()
 	//types.RunTypes()
