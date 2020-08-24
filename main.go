@@ -41,5 +41,4 @@ func main() {
 	//reflection.RunReflection()
 	//exercises.ReadFiles()
 	//exercises.WriteFiles()
-	golangbot.RunUnderstandingPointers()
 }
